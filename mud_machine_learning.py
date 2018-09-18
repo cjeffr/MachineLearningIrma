@@ -198,7 +198,7 @@ import os
 def clean_dataframe(dataframe1, dataframe2):
     from sklearn.preprocessing import LabelBinarizer
     lb = LabelBinarizer()
-    cat = ['Thickness at Date 1 (cm)', 'Thickness at Date 2 (cm)', 'Thickness at Date 3', 'Date 1', 'Date 2']
+    cat = ['Thickness at Date 1 (cm)', 'Thickness at Date 2 (cm)', 'Thickness at Date 3 (cm)', 'Date 1', 'Date 2']
     df1 = dataframe1.dropna(subset=cat)
     df2 = dataframe2.dropna(subset=cat)
     df1 = df1.replace('<0.1', 0.0)
